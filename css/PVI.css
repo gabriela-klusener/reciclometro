@@ -1,81 +1,126 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: rgb(188, 188, 188);
 }
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container {
-    width: 350px;
-    margin: 30px auto;
-    padding: 20px;
     background-color: #fff;
     border-radius: 30px;
     box-shadow: 0px 0px 10px 5px rgb(124, 124, 124);
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
 }
 
 .header {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 35px 10px 10px 10px;
 }
 
-.logo {
-    max-width: 40%;
-    margin: 0 auto 10px;
+#logo {
+    width: 20%;
+    margin-bottom: 10px;
+    background-color: rgb(255, 255, 255);
 }
 
+#seta-img {
+    display: block; 
+    background-color: transparent; 
+    border: none; 
+    box-shadow: none; 
+
+}
 h1 {
-    font-size: 1.5rem;
+    font-size: 20px;
     margin-bottom: 5px;
-}
-
-p {
-    font-size: 1rem;
-    color: #333;
+    background-color: #ffffff;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
 }
 
 label {
-    margin: 10px 0 5px;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #333;
+    background-color: #ffffff;
 }
 
 input, select, button {
     padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 5px rgb(195, 195, 195);
-}
-
-button {
-    background-color: rgb(3, 152, 158);
-    color: white;
-    border: none;
-    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #9e9e9e;
+    box-shadow: 1px 3px 5px 0px rgb(217, 217, 217);
     font-size: 1rem;
-    box-shadow: 3px 6px 5px 0px rgb(195, 195, 195);
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #ffffff;
 }
 
-button:hover {
-    background-color: #1fd0d0;
+form button[type="submit"] {
+    background-color: rgb(198, 198, 198); 
+    color: rgb(0, 0, 0);
+    padding: 6%; 
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 5% 20% 0% 20%; 
+    box-shadow: 1px 3px 5px 0px rgb(217, 217, 217);
+    width: auto; 
+    max-width: 100%; 
+}
+form button[type="button"]:hover {
+    background-color: rgb(3, 152, 158); 
 }
 
 footer {
-    text-align: center;
     margin-top: 20px;
+    background-color: #ffffff;
 }
 
-footer img {
+#footer {
     max-width: 50%;
+    background-color: #ffffff;
 }
 
-footer p {
-    font-size: 0.8rem;
+/* Botão de Voltar */
+.btn-voltar {
+    background-color: rgb(255, 255, 255); 
+    border: none; 
+    padding: 0; 
+    cursor: pointer; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: auto; 
+    height: auto; 
+    box-shadow: none; 
 }
+
+#arrow {
+    width: 25px; /* Ajuste o tamanho da seta conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove o espaço abaixo da imagem */
+}
+
