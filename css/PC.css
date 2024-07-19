@@ -35,7 +35,6 @@ h1{
 .conteudo{
     background-color: rgb(255, 255, 255);
     margin: 0 20%;
-   
 }
 
 #footer{
@@ -44,7 +43,7 @@ h1{
 }
 
 #logo{
-    width: 25%;
+    width: 30%;
     background-color:rgb(255, 255, 255); 
     
 }
@@ -98,6 +97,3 @@ form button[type="submit"] {
 form button[type="submit"]:hover {
     background-color: rgb(3,152,158);
 }
-
-
-
