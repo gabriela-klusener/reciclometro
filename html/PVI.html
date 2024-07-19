@@ -3,40 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Área do Credenciado</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <title>Área do credenciado</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <div class="conteiner-principal">
-        <img id="logo" src="imagens/logo_reciclometro.png" alt="Logo Reciclômetro">
-
-        <div class="conteudo">
+    <div class="container">
+        <div class="header">
+            <img src="logo_reciclometro.png" alt="Logo Reciclômetro" class="logo">
             <h1>Área do credenciado</h1>
             <p>Selecione a melhor opção</p>
-
-            <form action="#" method="post">
-                <label for="captar-servico">Captar serviço</label>
-                <select id="captar-servico" name="captar-servico">
-                    <option value="">Selecione</option>
-                    <option value="instalacao-poliframe">Instalação de poliframe</option>
-                    <option value="montagem-mobiliario">Montagem de mobiliário</option>
-                    <option value="producao-brindes">Produção de brindes</option>
-                    <option value="reforma-impermeabilizacao-imoveis">Reforma e impermeabilização de imóveis</option>
-                </select>
-
-                <label for="coleta-avulso">Coleta avulso</label>
-                <select id="coleta-avulso" name="coleta-avulso">
-                    <option value="">Selecione</option>
-                    <option value="entulhos-obra">Entulhos de obra</option>
-                    <option value="organico">Orgânico</option>
-                    <option value="reciclavel-urbano">Reciclável urbano</option>
-                </select>
-
-                <button type="submit">ENVIAR</button>
-            </form>
         </div>
+        <form>
+            <label for="captar-servico">Captar serviço</label>
+            <select id="captar-servico">
+                <option value="">Selecione</option>
+                <option value="instalacao-poliframe">Instalação de poliframe</option>
+                <option value="montagem-mobiliario">Montagem de mobiliário</option>
+                <option value="producao-brindes">Produção de brindes</option>
+                <option value="reforma-imoveis">Reforma e impermeabilização de imóveis</option>
+            </select>
 
-        <img id="footer" src="imagens/star_solucoes.png" alt="Start Soluções">
+            <label for="coleta-avulso">Coleta avulso</label>
+            <select id="coleta-avulso">
+                <option value="">Selecione</option>
+                <option value="entulhos-obra">Entulhos de obra</option>
+                <option value="organico">Orgânico</option>
+                <option value="reciclavel-urbano">Reciclável urbano</option>
+            </select>
+
+            <button type="submit">ENVIAR</button>
+        </form>
+        <footer>
+            <img src="star_solucoes.png" alt="Start Soluções">
+            <p>Start Soluções para resíduos<br>www.startsolucoes.eco.br</p>
+        </footer>
     </div>
 </body>
 </html>

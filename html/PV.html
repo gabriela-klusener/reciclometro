@@ -1,46 +1,54 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Área do credenciado</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <title>Orçamento</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    
-    <div class="conteiner-principal">
-        <img id="logo" src="imagens/logo_reciclometro.png" alt="Logo Reciclômetro">
-        
-        <div class="conteudo">
-            <h1>Área do credenciado</h1>
-            <p>Selecione a melhor opção</p>
-
-            <form action="#" method="post">
-                <label for="tipo-servico">Tipo de serviço</label>
-                <select id="tipo-servico" name="tipo-servico">
-                    <option value="">Selecione</option>
-                    <option value="coleta-avulso">Coleta avulso</option>
-                    <option value="curso-compostagem">Curso de compostagem</option>
-                    <option value="impermeabilizacao-containers">Impermeabilização de containers</option>
-                    <option value="impermeabilizacao-lajes">Impermeabilização de lajes</option>
-                    <option value="impermeabilizacao-muros-fachadas">Impermeabilização de muros e fachadas</option>
-                    <option value="montagem-divisorias">Montagem de divisórias</option>
-                    <option value="reparo-portoes-ferro">Reparo de portões de ferro</option>
-                    <option value="reparos-produtos">Reparos de produtos</option>
-                </select>
-
-                <label for="coleta-avulso">Coleta avulso</label>
-                <select id="coleta-avulso" name="coleta-avulso">
-                    <option value="">Selecione</option>
-                </select>
-
-                <button type="submit">ENVIAR</button>
-            </form>
+    <div class="container">
+        <div class="header">
+            <button class="btn-voltar" onclick="history.back()">←</button>
+            <img src="logo_reciclometro.png" alt="Logo Reciclômetro" class="logo">
+            <h1>Faça o seu orçamento</h1>
         </div>
+        <form>
+            <label for="tipo-servico">Tipo de serviço</label>
+            <select id="tipo-servico">
+                <option value="">Selecione</option>
+                <option value="coleta-avulso">Coleta avulso</option>
+                <option value="curso-compostagem">Curso de compostagem</option>
+                <option value="impermeabilizacao-containers">Impermeabilização de containers</option>
+                <option value="impermeabilizacao-lajes">Impermeabilização de lajes</option>
+                <option value="impermeabilizacao-muros">Impermeabilização de muros e fachadas</option>
+                <option value="montagem-divisorias">Montagem de divisórias</option>
+                <option value="reparo-portoes">Reparo de portões de ferro</option>
+                <option value="reparos-produtos">Reparos de produtos</option>
+            </select>
 
-        <img id="footer" src="imagens/star_solucoes.png" alt="Start Soluções">
+            <label for="orcamento-facil">Orçamento fácil</label>
+            <input type="text" id="orcamento-facil" placeholder="Área em m²">
+
+            <label for="produto">Produto</label>
+            <input type="text" id="produto" placeholder="R$">
+
+            <label for="servico">Serviço</label>
+            <input type="text" id="servico" placeholder="R$">
+
+            <label for="total">Total</label>
+            <input type="text" id="total" placeholder="R$">
+
+            <label for="agendamento">Agendamento</label>
+            <input type="date" id="agendamento-data">
+            <input type="time" id="agendamento-hora">
+
+            <button type="button" onclick="window.location.href='paginaVI.html'">ENVIAR</button>
+        </form>
+        <footer>
+            <img src="star_solucoes.png" alt="Start Soluções">
+            <p>Start Soluções para resíduos<br>www.startsolucoes.eco.br</p>
+        </footer>
     </div>
-
 </body>
 </html>
