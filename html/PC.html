@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de cadastro</title>
+    <link rel="stylesheet" href="PC.css">
+</head>
+<body>
+    
+    <div class="conteiner-principal">
+
+        <div class="header">
+            
+            <a id="seta" href="PI.html"><img id="seta-img" src="seta.png" alt="Voltar"></a>
+            <h1>Crie uma conta</h1>
+            <img id="logo" src="logo_reciclometro.png" alt="">
+             
+
+        </div>
+
+        <div class="conteudo">
+            <form id="cadastro-form">
+                <label for="tipo-consumidor">Tipo de consumidor</label>
+                <select id="tipo-consumidor" name="tipo-consumidor">
+                    <option value="">Selecione</option>
+                    <option value="consumidor-consciente">Consumidor Consciente</option>
+                    <option value="industria">Industria</option>
+                    <option value="condominio">Condominio</option>
+                    <option value="cooperativa">Cooperativa</option>
+                    <option value="prestador-de-serviço">Prestador de Serviço</option>
+                </select>       
+
+                <label for="cpf-cnpj">CPF/CNPJ</label>
+                <input type="text" id="cpf-cnpj" name="cpf-cnpj" placeholder="Digite aqui o seu CPF/CNPJ">
+
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" name="endereco" placeholder="Rua exemplo, n 000, bairro, cid/estado">
+
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone" name="telefone" placeholder="(+55) DDD 00000-0000">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@email.com">
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Escolha uma senha">
+                    
+                <button type="submit">ENVIAR</button>
+            </form>
+        </div>
+
+        <img id="footer" src="star_solucoes.png" alt="">
+
+    </div>
+
+</body>
+</html>
