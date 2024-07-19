@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.conteudo {
+    background-color: white;
+}
+
+/* Estiliza o cabeçalho principal */
+.login-header {
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 10px 10px;
+}
+
+/* Estiliza a imagem do logo */
+.img-login {
+    width: 30%;
+    padding-top: 30px;
+}
+
+/* Estiliza os títulos no cabeçalho */
+.login-header {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.login-header h1 {
+    font-size: 30px;
+    text-align: left;
+    background-color: white;
+}   
+
+.login-header h2 {
+    font-size: 16px;
+    font-weight: 500;
+    font-size: large;
+    background-color: white;
+}
+
+/* Estiliza o container principal */
+.container-principallogin {
+    min-height: 85vh;
+    width: 350px; 
+    margin: 30px auto; 
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 5px rgb(124, 124, 124);
+    border-radius: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estiliza o formulário */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.login-form label {
+    text-align: left;
+    font-size: 0.9rem;
+    color: #333;
+    background-color: white;
+}
+
+.login-form input, .login-form select {
+    padding: 10px;
+    border: 1px solid #9e9e9e;
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-shadow: 1px 3px 5px 0px rgb(217, 217, 217);
+}
+
+.login-form button[type="submit"] {
+    background-color: rgb(198, 198, 198);
+    color: rgb(0, 0, 0);
+    padding: 6%;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 5% 20% 0 20%;
+    box-shadow: 1px 3px 5px 0px rgb(217, 217, 217);
+}
+
+.login-form button[type="submit"]:hover {
+    background-color: rgb(3,152,158);
+}
+
+/* Estiliza as opções de login (lembrar-me e esqueci a senha) */
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+.login-options label {
+    font-size: 14px;
+}
+
+.login-options a {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-options a:hover {
+    text-decoration: underline;
+}
+
+.forgot-password {
+    background-color: white;
+}
+
+/* Estiliza o rodapé */
+.login-footer {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+
+.login-footer a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: #ffffff;
+}
+
+.login-footer p {
+    text-decoration: none;
+    background-color: white;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
