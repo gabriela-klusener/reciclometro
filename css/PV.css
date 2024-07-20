@@ -55,6 +55,7 @@ h1 {
     border: none; 
     padding: 0; 
     cursor: pointer; 
+}
 
 #arrow {
     width: 40%; 
@@ -99,7 +100,7 @@ form button[type="button"] {
     border-radius: 30px;
     font-size: 1rem;
     cursor: pointer;
-    margin: 5% 20% 0 20%; 
+    margin: 5% 20% 0 20%;
     box-shadow: 1px 3px 5px 0px rgb(217, 217, 217);
 }
 
@@ -107,7 +108,7 @@ form button[type="button"]:hover {
     background-color: rgb(3, 152, 158); 
 }
 
-
+/* Estiliza o rodapé */
 .login-footer {
     text-align: center;
     font-size: 14px;
