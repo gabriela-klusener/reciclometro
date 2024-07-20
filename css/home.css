@@ -55,10 +55,8 @@ body {
 }
 
 .btn-home:hover {
-    background-color: #01989E{
-        width: 5%;
-        background-color:rgb(255, 255, 255); 
-        
+    background-color: #01989E {
+    width: 5px;
     }
     
 }
@@ -69,7 +67,7 @@ body {
     position: absolute;
     right: 20px;
     top: 50%;
-    transform: translateY(-50%); /
+    transform: translateY(-50%); 
     background-color: #01989E;
 }
 
