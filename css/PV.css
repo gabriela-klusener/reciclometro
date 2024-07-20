@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     background-color: rgb(188, 188, 188);
 }
 
@@ -39,11 +40,6 @@ h1 {
     margin: 0 20%;
 }
 
-#footer {
-    max-width: 50%;
-    margin: 10%;
-}
-
 #logo {
     width: 25%;
     background-color: rgb(255, 255, 255);
@@ -59,11 +55,11 @@ h1 {
     border: none; 
     padding: 0; 
     cursor: pointer; 
-}
 
 #arrow {
     width: 40%; 
     height: auto; 
+}
 
 a {
     text-decoration: none;
@@ -75,6 +71,7 @@ form {
     flex-direction: column;
     gap: 10px;
     background-color: #ffffff;
+    padding: 20px;
 }
 
 form label {
@@ -108,4 +105,33 @@ form button[type="button"] {
 
 form button[type="button"]:hover {
     background-color: rgb(3, 152, 158); 
+}
+
+
+.login-footer {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px; 
+    border-bottom-right-radius: 30px; 
+    padding: 10px; 
+}
+
+.login-footer a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: #ffffff;
+}
+
+.login-footer p {
+    text-decoration: none;
+    background-color: white;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
 }
