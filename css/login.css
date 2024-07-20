@@ -2,8 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: white;
+    background-color: rgb(188, 188, 188);
 }
+
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -24,9 +25,19 @@ body {
 }
 
 /* Estiliza a imagem do logo */
-.img-login {
+.header {
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 10px 10px 10px;
+    
+}
+
+#logo{
     width: 30%;
-    padding-top: 30px;
+    background-color:rgb(255, 255, 255); 
 }
 
 /* Estiliza os títulos no cabeçalho */
@@ -135,26 +146,7 @@ body {
     background-color: white;
 }
 
-/* Estiliza o rodapé */
-.login-footer {
-    text-align: center;
-    font-size: 14px;
-    color: #666;
-    margin-top: 20px;
-    background-color: #ffffff;
-}
-
-.login-footer a {
-    color: #007bff;
-    text-decoration: none;
-    background-color: #ffffff;
-}
-
-.login-footer p {
-    text-decoration: none;
-    background-color: white;
-}
-
-.login-footer a:hover {
-    text-decoration: underline;
+#footer {
+    max-width: 50%;
+    margin-top: 10px;
 }
