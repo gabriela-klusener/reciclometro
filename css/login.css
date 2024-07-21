@@ -5,7 +5,6 @@
     background-color: rgb(188, 188, 188);
 }
 
-
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -14,7 +13,6 @@ body {
     background-color: white;
 }
 
-/* Estiliza o cabeçalho principal */
 .login-header {
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
@@ -24,23 +22,40 @@ body {
     padding: 35px 10px 10px;
 }
 
-/* Estiliza a imagem do logo */
 .header {
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     padding: 30px 10px 10px 10px;
-    
 }
 
-#logo{
+#logo {
     width: 30%;
-    background-color:rgb(255, 255, 255); 
+    background-color: rgb(255, 255, 255);
+    margin-left: 25%;
 }
 
-/* Estiliza os títulos no cabeçalho */
+.btn-voltar {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    box-shadow: none;
+    margin-right: 10px;
+}
+
+#arrow {
+    width: 25px;
+    height: auto;
+}
+
 .login-header {
     background-color: rgb(255, 255, 255);
     color: black;
@@ -66,7 +81,6 @@ body {
     background-color: white;
 }
 
-/* Estiliza o container principal */
 .container-principallogin {
     min-height: 85vh;
     width: 350px; 
@@ -78,7 +92,6 @@ body {
     padding: 20px;
 }
 
-/* Estiliza o formulário */
 .login-form {
     display: flex;
     flex-direction: column;
@@ -119,7 +132,6 @@ body {
     background-color: rgb(3,152,158);
 }
 
-/* Estiliza as opções de login (lembrar-me e esqueci a senha) */
 .login-options {
     display: flex;
     justify-content: space-between;

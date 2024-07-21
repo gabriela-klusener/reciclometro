@@ -1,41 +1,39 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Login</title>
     <link rel="stylesheet" href="../css/login.css">
-
-
 </head>
 <body>
     <div class="container-principallogin">
-
         <div class="header">
-            
-
-            <img id="logo" src="../imagens/logo_reciclometro.png" alt="">
-
-         </div>
-
+            <button class="btn-voltar" onclick="history.back()">
+                <img id="arrow" src="../imagens/seta.png" alt="Seta">
+            </button>
+            <img id="logo" src="../imagens/logo_reciclometro.png" alt="Logo">
+        </div>
         <div class="login-header">
             <h1>Login,</h1>
             <h2>Acesse a sua conta</h2>
         </div>
-         <div class="conteudo">
+        <div class="conteudo">
             <form class="login-form">
                <label for="email">Informe seu Email</label>
                <input type="email" id="email" placeholder="Digite aqui o seu Email" required>
-                <label for="password">Digite a senha</label> <input type="password" id="password" placeholder="Digite a sua senha" required>
-            <div class="login-options">
-                <label>
-                    <input type="checkbox" id="remember-me"> Lembrar-me
-                </label>
-                <a href="#" class="forgot-password">Esqueci a senha</a>
-            </div>
-            <button type="submit">ENTRAR</button>
-        </form>
-    </div>
+               <label for="password">Digite a senha</label>
+               <input type="password" id="password" placeholder="Digite a sua senha" required>
+               <div class="login-options">
+                   <label>
+                       <input type="checkbox" id="remember-me"> Lembrar-me
+                   </label>
+                   <a href="#" class="forgot-password">Esqueci a senha</a>
+               </div>
+               <button type="submit">ENTRAR</button>
+            </form>
+        </div>
         <img id="footer" src="../imagens/star_solucoes.png" alt="">
-    
+    </div>
 </body>
 </html>

@@ -7,41 +7,37 @@
     <link rel="stylesheet" href="../css/PVI.css">
 </head>
 <body>
-    <div class="conteiner-principal">
+    <div class="container-principal"> 
         <div class="header">
             <button class="btn-voltar" onclick="history.back()">
                 <img id="arrow" src="../imagens/seta.png" alt="Seta">
             </button>
-            <div class="header-content">
-                <img id="logo" src="../imagens/logo_reciclometro.png" alt="Logo">
-                <h1>Área do credenciado</h1>
-                <p class="subtitulo">Selecione a melhor opção</p>
-            </div>
+            <img id="logo" src="../imagens/logo_reciclometro.png" alt="Logo">
         </div>
-        <form>
-            <label for="captar-servico">Captar serviço</label>
-            <select id="captar-servico">
-                <option value="">Selecione</option>
-                <option value="instalacao-poliframe">Instalação de poliframe</option>
-                <option value="montagem-mobiliario">Montagem de mobiliário</option>
-                <option value="producao-brindes">Produção de brindes</option>
-                <option value="reforma-imoveis">Reforma e impermeabilização de imóveis</option>
-            </select>
-
-            <label for="coleta-avulso">Coleta avulso</label>
-            <select id="coleta-avulso">
-                <option value="">Selecione</option>
-                <option value="entulhos-obra">Entulhos de obra</option>
-                <option value="organico">Orgânico</option>
-                <option value="reciclavel-urbano">Reciclável urbano</option>
-            </select>
-
-            <button type="submit">ENVIAR</button>
-        </form>
-        <footer class="login-footer">
-            <p>Start Soluções para residências</p>
-            <a href="https://startsolucoes.eco.br">www.startsolucoes.eco.br</a>
-        </footer>
-    </div>
+        <div class="header-content"> 
+            <h1>Área do credenciado</h1>
+            <h2>Selecione a melhor opção</h2>
+        </div>
+        <div class="conteudo">
+            <form class="form"> 
+                <label for="captar-servico">Captar serviço</label>
+                <select id="captar-servico">
+                    <option value="">Selecione</option>
+                    <option value="instalacao-poliframe">Instalação de poliframe</option>
+                    <option value="montagem-mobiliario">Montagem de mobiliário</option>
+                    <option value="producao-brindes">Produção de brindes</option>
+                    <option value="reforma-imoveis">Reforma e impermeabilização de imóveis</option>
+                </select>
+                <label for="coleta-avulso">Coleta avulso</label>
+                <select id="coleta-avulso">
+                    <option value="">Selecione</option>
+                    <option value="entulhos-obra">Entulhos de obra</option>
+                    <option value="organico">Orgânico</option>
+                    <option value="reciclavel-urbano">Reciclável urbano</option>
+                </select>
+                <button type="submit">ENVIAR</button>
+            </form>
+        </div>
+        <img id="footer" src="../imagens/star_solucoes.png" alt="">
 </body>
 </html>
