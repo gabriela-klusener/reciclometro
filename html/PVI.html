@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área do credenciado</title>
-    <link rel="stylesheet" href="../css/PVI.css">
+    <link rel="stylesheet" href="css/PVI.css">
 </head>
 <body>
     <div class="container-principal"> 
         <div class="header">
             <button class="btn-voltar" onclick="history.back()">
-                <img id="arrow" src="../imagens/seta.png" alt="Seta">
+                <img id="arrow" src="imagens/seta.png" alt="Seta">
             </button>
-            <img id="logo" src="../imagens/logo_reciclometro.png" alt="Logo">
+            <img id="logo" src="imagens/logo_reciclometro.png" alt="Logo">
         </div>
         <div class="header-content"> 
             <h1>Área do credenciado</h1>
             <h2>Selecione a melhor opção</h2>
         </div>
         <div class="conteudo">
-            <form class="form"> 
+            <form class="form" action="" method="post"> 
+                <input type="hidden" name="user_login" value="">
+                <input type="hidden" name="data" value="home">
                 <label for="captar-servico">Captar serviço</label>
                 <select id="captar-servico">
                     <option value="">Selecione</option>
@@ -38,6 +40,6 @@
                 <button type="submit">ENVIAR</button>
             </form>
         </div>
-        <img id="footer" src="../imagens/star_solucoes.png" alt="">
+        <img id="footer" src="imagens/star_solucoes.png" alt="">
 </body>
 </html>

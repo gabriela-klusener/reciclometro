@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orçamento</title>
-    <link rel="stylesheet" href="../css/PV.css">
+    <link rel="stylesheet" href="css/PV.css">
 </head>
 
 <body>
@@ -12,14 +12,17 @@
 
         <div class="header">
             <button class="btn-voltar" onclick="history.back()">
-                <img id="arrow" src="../imagens/seta.png" alt="Seta">
+                <img id="arrow" src="imagens/seta.png" alt="Seta">
             </button>
-            <img id="logo" src="../imagens/logo_reciclometro.png" alt="Logo">
+            <img id="logo" src="imagens/logo_reciclometro.png" alt="Logo">
             <h1>Faça o seu orçamento</h1>
         </div>
         
         <div class="conteudo">
-            <form>
+            <form action="" method="post">
+                <input type="hidden" name="user_login" value="">
+                <input type="hidden" name="data" value="home">
+ 
                 <label for="tipo-servico">Tipo de serviço</label>
                 <select id="tipo-servico">
                     <option value="">Selecione</option>
@@ -43,10 +46,10 @@
                 <label for="agendamento">Agendamento</label>
                 <input type="date" id="agendamento-data">
                 <input type="time" id="agendamento-hora">
-                <button type="button" onclick="window.location.href='paginaVI.html'">ENVIAR</button>
+                <button type="submit">ENVIAR</button>
             </form>
         </div>
-        <img id="footer" src="../imagens/star_solucoes.png" alt="">
+        <img id="footer" src="imagens/star_solucoes.png" alt="">
     </div>
 </body>
 </html>

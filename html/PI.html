@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
-    <link rel="stylesheet" href="../css/PI.css">
+    <link rel="stylesheet" href="css/PI.css">
 </head>
 <body>
     
     <div class="conteiner-principal">
         
-        <img id="logo" src="../imagens/logo_reciclometro.png" alt="">
+        <img id="logo" src="imagens/logo_reciclometro.png" alt="">
         
         <div class="conteudo">
 
@@ -19,22 +19,20 @@
 
            <div class="login">
                 <p>Já possui uma conta?</p>
-                <a href="login.html" class="btn-link">
+                <a href="javascript:{}" class="btn-link" onclick="post_form('user_login', 'login')">
                 <button class="btn-login">Login</button>
                 </a>
            </div>
 
            <div class="cadastro">
                 <p>Não conhece a plataforma?</p>
-                <a href="PC.html" class="btn-link">
+                <a href="javascript:{}" class="btn-link" onclick="post_form('cadcli', 1)">
                 <button class="btn-cadastro">Cadastro</button>
                 </a>
            </div>
         </div>
-
-        <img id="footer" src="../imagens/star_solucoes.png" alt="">
-
+        <img id="footer" src="imagens/star_solucoes.png" alt="">
     </div>
-
+    {sform}
 </body>
 </html>

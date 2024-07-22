@@ -3,44 +3,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Login</title>
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
     <div class="container-principalhome">
         <div class="conteudo">
-            <img class="img-home" src="../imagens/logo_reciclometro.png" alt="Logo">
+            <img class="img-home" src="imagens/logo_reciclometro.png" alt="Logo">
 
             <button class="btn-home">
                 Pontos fixos
-                <img class="btn-icon" src="../imagens/iconepontofixo.png" alt="">
+                <img class="btn-icon" src="imagens/iconepontofixo.png" alt="">
             </button>
 
-            <button class="btn-home">
+            <button class="btn-home" onclick="post_form('service_budget', 1)">
                 Serviços
-                <img class="btn-icon" src="../imagens/iconeserviços.png" alt="">
+                <img class="btn-icon" src="imagens/iconeserviços.png" alt="">
             </button>
-
+            
             <button class="btn-home">
                 Custos
-                <img class="btn-icon" src="../imagens/iconecursos.png" alt="">
+                <img class="btn-icon" src="imagens/iconecursos.png" alt="">
             </button>
-
-            <button class="btn-home">
+            
+            
+            <button class="btn-home" onclick="post_form('accredited', 1)">
                 Visitas técnica
-                <img class="btn-icon" src="../imagens/iconevisita.png" alt="">
+                <img class="btn-icon" src="imagens/iconevisita.png" alt="">
             </button>
 
             <button class="btn-home">
                 Resgate bônus
-                <img class="btn-icon" src="../imagens/iconeresgate.png" alt="">
+                <img class="btn-icon" src="imagens/iconeresgate.png" alt="">
             </button>
 
             <button class="btn-home">
                 Pesquisa de satisfação
-                <img class="btn-icon" src="../imagens/iconesatisfaçao.png" alt="">
+                <img class="btn-icon" src="imagens/iconesatisfaçao.png" alt="">
             </button>
         </div>
-        <img id="footer" src="../imagens/star_solucoes.png" alt="">
+        <img id="footer" src="imagens/star_solucoes.png" alt="">
     </div>
+    {sform}
 </body>
 </html>
