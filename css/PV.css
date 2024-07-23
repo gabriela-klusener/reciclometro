@@ -99,22 +99,23 @@ form input, form select {
     height: 50px;
 }
 
-form button[type="button"] {
+form button[type="submit"] {
     background-color: rgb(198, 198, 198); 
     color: rgb(0, 0, 0);
-    padding: 15px; 
+    padding: 6%; 
     border: none;
     border-radius: 30px;
     font-size: 1rem;
     cursor: pointer;
-    margin-left: 35%; 
-    margin-top: 20px;
+    margin: 30px auto 0 auto; 
     box-shadow: 1px 3px 5px 0px rgb(217, 217, 217);
     width: 80%; 
-    display: block; 
+    max-width: 100%; 
+    margin-left: 35%;
+    
 }
 
-form button[type="button"]:hover {
+form button[type="submit"]:hover {
     background-color: rgb(3, 152, 158); 
 }
 
