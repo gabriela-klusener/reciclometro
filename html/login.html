@@ -5,9 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Login</title>
     <link rel="stylesheet" href="css/login.css">
-    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/modalEnvio.css">
+    <link rel="stylesheet" href="css/modal.css">
 </head>
 <body>
+    <div id="modal" class="modal">
+        <form class="modal-content animate login-form" action="/action_page.php" method="post">
+            <div class="conteiner-principal">
+        
+                <img id="verificado" src="../imagens/verificado.png" alt="">
+                <h1> PARABÉNS </h1>
+                <p>Cadastro realizado com sucesso!</p>
+                <a href="PI.html">Volte para a página inicial</a>
+        
+        
+            </div>
+            
+        </form>
+      </div>
+      
     <div class="container-principallogin">
         <div class="header">
             <button class="btn-voltar" onclick="history.back()">
@@ -21,17 +37,17 @@
         </div>
         <div class="conteudo">
             <form class="login-form" method="post" action="">
-               <input type="hidden" name="user_login" value="">
+               <input type="hidden" name="user_login" value="login">
                <input type="hidden" name="data" value="home">
                <label for="email">Informe seu Email</label>
-               <input type="email" id="email" placeholder="Digite aqui o seu Email" required>
+               <input type="email" id="email" name="user_email" placeholder="Digite aqui o seu Email" required>
                <label for="password">Digite a senha</label>
-               <input type="password" id="password" placeholder="Digite a sua senha" required>
+               <input type="password" id="password" name="user_passw" placeholder="Digite a sua senha" required>
                <div class="login-options">
                    <label>
-                       <input type="checkbox" id="remember-me"> Lembrar-me
+                       <input type="checkbox" id="remember-me" name="remember-me"> Lembrar-me
                    </label>
-                   <a href="javascript:{}" class="forgot-password">Esqueci a senha</a>
+                   <a href="javascript:{}" onclick="openModal()" class="forgot-password">Esqueci a senha</a>
                </div>
                <button type="submit">ENTRAR</button>
             </form>
@@ -40,4 +56,15 @@
     </div>
     {sform}
 </body>
+<script>
+    var modal = document.getElementById('modal');
+    function openModal () {
+        modal.style.display = "block";
+    }
+
+    function closeModal () {
+        modal.style.display = "none";
+    }
+
+</script>
 </html>
