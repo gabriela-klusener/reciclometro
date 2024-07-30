@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(188, 188, 188);
+}
+
+h1 {
+    background-color: rgb(254, 254, 254);
+    font-size: 25px;
+    margin-right: 16%;
+}
+
+.conteiner-principal {
+    min-height: 85vh;
+    width: 350px;
+    margin: 30px auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 5px rgb(124, 124, 124);
+    border-radius: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.header {
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 35px 10px 10px 10px;
+}
+
+#logo {
+    width: 25%;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10%;
+}
+
+#seta-img {
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+}
+
+.btn-voltar {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#arrow {
+    width: 40%;
+    height: auto;
+}
+
+#map {
+    height: 400px;
+    width: calc(100% - 40px); 
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 30px;
+    margin: 20px auto;
+    background: rgba(156, 207, 214, 0.932);
+}
+
+#footer {
+    max-width: 50%;
+    margin: 10%;
+}
+
+.leaflet-control-zoom-in, .leaflet-control-zoom-out {
+    background-color: rgb(198, 198, 198);
+    border: 2px solid rgb(124, 124, 124);
+    border-radius: 5%; 
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+}
+
+.leaflet-control-zoom-in:hover, .leaflet-control-zoom-out:hover {
+    background-color: rgb(3, 152, 158);
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .conteiner-principal {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .header {
+        padding: 20px 5px 5px 5px;
+    }
+
+    #logo {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #map {
+        height: 300px;
+    }
+}
