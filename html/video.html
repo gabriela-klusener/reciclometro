@@ -1,47 +1,74 @@
-<!DOCTYPE html> 
-<html> 
-<body> 
-<h1>Titulo do video</h1>
-<p>Informações sobre o video</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/video.css">
+  <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
 
-<div style="text-align:center"> 
-  <button onclick="playPause()">Play/Pause</button> 
-  <button onclick="makeBig()">Big</button>
-  <button onclick="makeSmall()">Small</button>
-  <button onclick="makeNormal()">Normal</button>
-  <br><br>
-  <video id="video1" width="420">
-    <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
-    <source src="mov_bbb.ogg" type="video/ogg">
-    Your browser does not support HTML video.
-  </video>
-</div> 
+  <div class="conteiner-principal">
 
-<script> 
-var myVideo = document.getElementById("video1"); 
+      <div class="header">
+        <a id="seta" href="PI.html"><img id="seta-img" src="imagens/seta.png" alt="Voltar"></a>
+        <img id="logo" src="imagens/logo_reciclometro.png" alt="">
+      </div>
 
-function playPause() { 
-  if (myVideo.paused) 
-    myVideo.play(); 
-  else 
-    myVideo.pause(); 
-} 
+        <div class="texto">
+          <h1>Título do video</h1>
+          <p>Informações sobre o vídeo.</p>
+        </div>
 
-function makeBig() { 
-    myVideo.width = 560; 
-} 
+        <div class="botoes"> 
+          <button onclick="playPause()">Play/Pause <img id="play-pause" src="imagens/playpause.png" alt=""></button> 
+          <button onclick="makeBig()">Big <img id="big" src="imagens/expandir.png" alt=""></button>
+          <button onclick="makeSmall()">Small <img id="small" src="imagens/diminuir.png" alt=""></button>
+        </div>
 
-function makeSmall() { 
-    myVideo.width = 320; 
-} 
+        <div class="video">
+          <video id="video1">
+            <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+            <source src="mov_bbb.ogg" type="video/ogg">
+            Your browser does not support HTML video.
+          </video>
+        </div> 
 
-function makeNormal() { 
-    myVideo.width = 420; 
-} 
-</script> 
+        <p>Video courtesy of <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
 
-<p>Video courtesy of <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
+        <img id="footer" src="../imgs/star_solucoes.png" alt="">
+    
+    </div>
 
-</body> 
-</html>
+   
+  <script>
+
+  var myVideo = document.getElementById("video1"); 
+
+  function playPause() { 
+    if (myVideo.paused) 
+      myVideo.play(); 
+    else 
+      myVideo.pause(); 
+  } 
+
+  function makeBig() { 
+      myVideo.width = 560; 
+  } 
+
+  function makeSmall() { 
+      myVideo.width = 320; 
+  } 
+
+  function makeNormal() { 
+      myVideo.width = 420; 
+  } 
+  </script> 
+
+  </body> 
+  </html>
+    
+
+
 
