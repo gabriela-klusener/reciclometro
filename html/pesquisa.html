@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reciclometro - Cursos</title>
+  <link rel="stylesheet" href="css/pesquisa.css">
+  <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    form, center, p, textarea {
+        background-color: white;
+    }
+    table, th, td, i {
+        background-color: white;
+        border: none;
+    }
+    th {font-size: 48px;}
+    .fa-star {
+        font-size: 48px;
+        color: gray;
+        cursor: pointer;
+    }
+    textarea {
+            width: 300px;
+            height: 130px;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 15px;
+            resize: none; /* Remove o redimensionamento do textarea */
+            outline: none; /* Remove o contorno ao focar no textarea */
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        textarea:focus {
+            border-color: #66afe9; /* Cor da borda ao focar */
+            box-shadow: 0 0 5px rgba(102, 175, 233, 0.6); /* Sombra ao focar */
+        }    
+  </style>
+</head>
+<body>
+  <div class="conteiner-principal">
+      <div class="header">
+        <a id="seta" href="javascript:{}" onclick="history.back()"><img id="seta-img" src="imagens/seta.png" alt="Voltar"></a>
+        <img id="logo" src="imagens/logo_reciclometro.png" alt="">
+      </div>
+
+      <div class="texto">
+        <h1>Pesquisa de satisfação</h1>
+        <p id="question">Questões da pesquisa.</p>
+      </div>
+      <center>
+        <table id="star-rating">
+            <tr><th colspan="5">🤔</th></tr>
+            <tr>
+                <td><i class="fa fa-star"></i></td>
+                <td><i class="fa fa-star"></i></td>
+                <td><i class="fa fa-star"></i></td>
+                <td><i class="fa fa-star"></i></td>
+                <td><i class="fa fa-star"></i></td>
+            </tr>
+        </table>
+        <form action="" method="post">
+            <input type="hidden" value="">
+            <textarea cols="38" rows="8"></textarea>
+            <p>
+                <br>
+                <button type="submit" id="submit" style="display: none;">ENVIAR</button>
+                <button type="button" id="next" onclick="nextQuestion()">Próximo</button>
+              </p>
+        </form>
+      </center>    
+      <img id="footer" src="imagens/star_solucoes.png" alt="">
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script>
+    const arr_questions = ["", "Pergunta 1", "Pergunta 2", "Pergunta 3", "Pergunta 4", "Pergunta 5"];
+    let numQuestion = 0;
+    function nextQuestion() {
+      numQuestion++; 
+      if (numQuestion >= arr_questions.length) { 
+        $("#next").hide();
+        $("#submit").show();
+      } else {
+        $("#question").text(arr_questions[numQuestion]);
+        $('textarea').val("");
+        updateStars(0);
+      }
+    }
+  
+    const arr_emojis = ["🤔", "😡", "🙄", "🙂", "😍", "🥰"];
+    
+    $("#star-rating i").click(function () {
+        const index = $("#star-rating i").index(this);
+        updateStars(index);
+    });
+
+    $("#star-rating i").hover(function () {
+        const index = $("#star-rating i").index(this);
+        updateStars(index);
+    });
+
+    function updateStars(index) {
+        $("#star-rating i").css("color", "gray");
+        $("#star-rating i").slice(0, index + 1).css("color", "gold");
+        $("#star-rating th").text(arr_emojis[index + 1]);
+    }
+
+    $(document).ready(function() {
+      nextQuestion();
+    });
+  </script>
+</body> 
+</html>
