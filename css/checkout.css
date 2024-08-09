@@ -1,0 +1,336 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+
+.conteiner-principal{
+    min-height: 85vh;
+    width: 350px;
+    margin: 30px auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 5px rgb(124, 124, 124) ;
+    border-radius: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    background-color: rgb(3,152,158);
+    text-decoration: none;
+    color: white;
+    margin-left: 17%;
+    font-size: 1.5rem;
+
+}
+
+.header{
+    background-color: rgb(3,152,158);
+    border-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 3px 5px 0px rgb(217, 217, 217);
+}
+
+.progresso{
+    width: 280px;
+    background-color: rgb(3,152,158);
+    height: 8px;
+    border-radius: 12px;
+    margin: 50px auto;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow:  0px 3px 5px 0px rgb(217, 217, 217);
+}
+
+.circle{
+    width:40px;
+    height: 40px;
+    background-color:rgb(3,152,158);
+    z-index: 2;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    box-shadow:  0px 3px 3px 0px rgb(165, 165, 165);
+}
+
+.material-icons {
+   
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+#money{
+    background-color:rgb(3,152,158);
+    color: white;
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 93%;
+   
+}
+
+#cart{
+    background-color:rgb(3,152,158);
+    color: white;
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 7%;
+}
+
+#truck{
+    background-color:rgb(3,152,158);
+    color: white;
+    position: absolute;
+    z-index: 3;
+}
+
+#link-voltar{
+    background-color: rgb(3,152,158);
+    text-decoration: none;
+    color: white;
+}
+
+#img-seta{
+    background-color: rgb(3,152,158);
+    width: 70%;
+    margin-left: 40%;
+}
+
+.payment-main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: #ffffff;
+}
+
+.user-card-info-wrapper {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.credit-card-info {
+   display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff !important;
+    padding: 15px;
+    border-radius: 12px;
+    border: solid 2px #efebe9;
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.credit-card-info label {
+    text-align: left;
+    font-size: 0.9rem;
+    color: #333;
+    background-color: #ffffff !important;
+}
+
+.credit-card-info input,
+.credit-card-info select {
+    padding: 10px;
+    border: 1px solid #9e9e9e;
+    background-color: #ffffff !important;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 80%;
+    height: 40px;
+    box-shadow: 1px 3px 5px 0px rgb(217, 217, 217);
+}
+
+.credit-card-info button[type="submit"] {
+    background-color: rgb(198, 198, 198);
+    color: rgb(0, 0, 0);
+    padding: 6%;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 30px auto 0 auto;
+    box-shadow: 1px 3px 5px 0px rgb(217, 217, 217);
+    width: 80%;
+    max-width: 100%;
+}
+
+.credit-card-info button[type="submit"]:hover {
+    background-color: rgb(3, 152, 158);
+}
+
+.user-shop-cart-info-wrapper {
+    width: 80%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    border: solid 2px #efebe9;
+    margin-top: 20px;
+}
+
+.request-card h2,
+.request-card h3,
+.request-card p {
+    text-align: left;
+    margin: 10px 0;
+}
+
+#finish-payment {
+    background-color: rgb(198, 198, 198);
+    color: rgb(0, 0, 0);
+    padding: 6%;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 30px auto;
+    box-shadow: 1px 3px 5px 0px rgb(217, 217, 217);
+    width: 80%;
+    max-width: 100%;
+}
+
+#finish-payment:hover {
+    background-color: rgb(3, 152, 158);
+}
+
+.validity-and-sc {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card-security-code-input-and-icon {
+    display: flex;
+    align-items: center;
+}
+
+.card-security-code-input-and-icon input {
+    flex-grow: 1;
+}
+
+
+.card-security-code-input-and-icon span {
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.phone-and-birthday {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.credit-card-number {
+    display: flex;
+    align-items: center;
+}
+
+.credit-card-number input {
+    flex-grow: 1;
+}
+
+.credit-card-number span {
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+button[type="submit"],
+#finish-payment,
+.resgatar-btn {
+    background-color: #c6c6c6;
+    color: #000;
+    padding: 6%;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 40px auto 0px auto 30px auto;
+    margin-top: 10px;
+    box-shadow: 1px 3px 5px 0px #d9d9d9;
+    width: 75%;
+    max-width: 100%;
+
+}
+
+button[type="submit"]:hover,
+#finish-payment:hover,
+.resgatar-btn:hover {
+    background-color: #03989e;
+}
+
+
+.request-card input,
+.request-card select {
+    background-color: transparent; 
+    border: none; 
+    border-bottom: 1px solid #9e9e9e; 
+    padding: 10px;
+    width: 95%;
+    margin-bottom: 15px; 
+    box-shadow: none; 
+    font-size: 1rem;
+    color: #333;
+}
+
+.total-amount-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.total-amount-wrapper span {
+    font-size: 1rem;
+    color: #333;
+}
+
+.request-card label {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+}
+.request-card h3 {
+    text-align: center; 
+    font-size: 1.2rem;
+    margin-bottom: 20px; /
+}
+
+.request-card button[type="button"] {
+    background-color: rgb(198, 198, 198);
+    color: rgb(0, 0, 0);
+    padding: 6%;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 30px 15px 30px 15px;
+    box-shadow: 1px 3px 5px 0px rgb(217, 217, 217);
+    width: 80%;
+    max-width: 100%;
+}
+
+
+.request-card button[type="button"]:hover {
+    background-color: rgb(3, 152, 158);
+}
